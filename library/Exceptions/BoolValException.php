@@ -12,12 +12,12 @@ namespace Respect\Validation\Exceptions;
 
 class BoolValException extends ValidationException
 {
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => '{{name}} must be a boolean value',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => '{{name}} must not be a boolean value',
-        ],
-    ];
+        ),
+    );
 }

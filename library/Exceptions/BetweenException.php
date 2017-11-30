@@ -17,18 +17,18 @@ class BetweenException extends NestedValidationException
     const LOWER = 1;
     const GREATER = 2;
 
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::BOTH => '{{name}} must be between {{minValue}} and {{maxValue}}',
             self::LOWER => '{{name}}  must be greater than {{minValue}}',
             self::GREATER => '{{name}} must be lower than {{maxValue}}',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::BOTH => '{{name}} must not be between {{minValue}} and {{maxValue}}',
             self::LOWER => '{{name}}  must not be greater than {{minValue}}',
             self::GREATER => '{{name}} must not be lower than {{maxValue}}',
-        ],
-    ];
+        ),
+    );
 
     public function chooseTemplate()
     {

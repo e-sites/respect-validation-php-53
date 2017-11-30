@@ -17,11 +17,11 @@ class Phone extends AbstractRegexRule
     {
         return $this->replaceParams(
             '/^\+?({part1})? ?(?(?=\()(\({part2}\) ?{part3})|([. -]?({part2}[. -]*)?{part3}))$/',
-            [
+            array(
                 'part1' => '\d{0,3}',
                 'part2' => '\d{1,3}',
                 'part3' => '((\d{3,5})[. -]?(\d{4})|(\d{2}[. -]?){4})',
-            ]
+            )
         );
     }
 

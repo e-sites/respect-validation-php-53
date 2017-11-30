@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class TlSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'AL', // Aileu
         'AN', // Ainaro
         'BA', // Baucau
@@ -36,7 +36,7 @@ class TlSubdivisionCode extends AbstractSearcher
         'MT', // Manatuto
         'OE', // Oecussi
         'VI', // Viqueque
-    ];
+    );
 
     public $compareIdentical = true;
 }

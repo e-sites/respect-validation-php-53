@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class FkSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [null, ''];
+    public $haystack = array(null, '');
 
     public $compareIdentical = true;
 }

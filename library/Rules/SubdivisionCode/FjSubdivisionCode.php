@@ -22,13 +22,13 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class FjSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'C', // Central Division
         'E', // Eastern Division
         'N', // Northern Division
         'R', // Rotuma
         'W', // Western Division
-    ];
+    );
 
     public $compareIdentical = true;
 }

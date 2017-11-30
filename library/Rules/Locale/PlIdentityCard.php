@@ -26,7 +26,7 @@ class PlIdentityCard extends AbstractRule
             return false;
         }
 
-        $weights = [7, 3, 1, 0, 7, 3, 1, 7, 3];
+        $weights = array(7, 3, 1, 0, 7, 3, 1, 7, 3);
         $weightedSum = 0;
         for ($i = 0; $i < 9; ++$i) {
             $code = ord($input[$i]);

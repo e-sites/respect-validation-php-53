@@ -15,16 +15,16 @@ class MaxException extends ValidationException
 {
     const INCLUSIVE = 1;
 
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => '{{name}} must be less than {{interval}}',
             self::INCLUSIVE => '{{name}} must be less than or equal to {{interval}}',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => '{{name}} must not be less than {{interval}}',
             self::INCLUSIVE => '{{name}} must not be less than or equal to {{interval}}',
-        ],
-    ];
+        ),
+    );
 
     public function chooseTemplate()
     {

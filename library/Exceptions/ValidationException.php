@@ -21,14 +21,14 @@ class ValidationException extends InvalidArgumentException implements ExceptionI
     const MODE_DEFAULT = 1;
     const MODE_NEGATIVE = 2;
     const STANDARD = 0;
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => 'Data validation failed for %s',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => 'Data validation failed for %s',
-        ],
-    ];
+        ),
+    );
 
     /**
      * @var int
@@ -49,10 +49,10 @@ class ValidationException extends InvalidArgumentException implements ExceptionI
     protected $mode = self::MODE_DEFAULT;
     protected $name = '';
     protected $template = '';
-    protected $params = [];
+    protected $params = array();
     private $customTemplate = false;
 
-    public static function format($template, array $vars = [])
+    public static function format($template, array $vars = array())
     {
         return preg_replace_callback(
             '/{{(\w+)}}/',
@@ -170,11 +170,11 @@ class ValidationException extends InvalidArgumentException implements ExceptionI
         }
 
         if ($value instanceof Exception) {
-            $properties = [
+            $properties = array(
                 'message' => $value->getMessage(),
                 'code' => $value->getCode(),
                 'file' => $value->getFile().':'.$value->getLine(),
-            ];
+            );
 
             return sprintf('`[exception] (%s: %s)`', $class, static::stringify($properties, $nextDepth));
         }
@@ -198,7 +198,7 @@ class ValidationException extends InvalidArgumentException implements ExceptionI
         return key(static::$defaultTemplates[$this->mode]);
     }
 
-    public function configure($name, array $params = [])
+    public function configure($name, array $params = array())
     {
         $this->setName($name);
         $this->setId($this->guessId());

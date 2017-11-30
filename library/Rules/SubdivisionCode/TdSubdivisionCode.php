@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class TdSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'BA', // Batha
         'BG', // Barh el Ghazel
         'BO', // Borkou
@@ -47,7 +47,7 @@ class TdSubdivisionCode extends AbstractSearcher
         'TI', // Tibesti
         'WF', // Wadi Fira
         'EN', // Ennedi
-    ];
+    );
 
     public $compareIdentical = true;
 }

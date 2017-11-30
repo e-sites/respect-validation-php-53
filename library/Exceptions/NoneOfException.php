@@ -13,12 +13,12 @@ namespace Respect\Validation\Exceptions;
 
 class NoneOfException extends NestedValidationException
 {
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => 'None of these rules must pass for {{name}}',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => 'All of these rules must pass for {{name}}',
-        ],
-    ];
+        ),
+    );
 }

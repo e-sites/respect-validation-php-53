@@ -22,11 +22,11 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class TjSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'GB', // Gorno-Badakhstan
         'KT', // Khatlon
         'SU', // Sughd
-    ];
+    );
 
     public $compareIdentical = true;
 }

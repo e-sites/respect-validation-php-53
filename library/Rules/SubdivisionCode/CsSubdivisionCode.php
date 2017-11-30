@@ -22,12 +22,12 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class CsSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'KOS', // Kosovo
         'MON', // Montenegro
         'SER', // Serbia
         'VOJ', // Vojvodina
-    ];
+    );
 
     public $compareIdentical = true;
 }

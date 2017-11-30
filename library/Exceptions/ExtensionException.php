@@ -21,12 +21,12 @@ class ExtensionException extends ValidationException
     /**
      * @var array
      */
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => '{{name}} must have {{extension}} extension',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => '{{name}} must not have {{extension}} extension',
-        ],
-    ];
+        ),
+    );
 }

@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class CuSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         '01', // Pinar del Rio
         '03', // La Habana
         '04', // Matanzas
@@ -39,7 +39,7 @@ class CuSubdivisionCode extends AbstractSearcher
         '15', // Artemisa
         '16', // Mayabeque
         '99', // Isla de la Juventud
-    ];
+    );
 
     public $compareIdentical = true;
 }

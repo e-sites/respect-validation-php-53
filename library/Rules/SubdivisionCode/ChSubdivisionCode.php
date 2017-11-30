@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class ChSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'AG', // Aargau
         'AI', // Appenzell Innerhoden
         'AR', // Appenzell Ausserrhoden
@@ -49,7 +49,7 @@ class ChSubdivisionCode extends AbstractSearcher
         'VS', // Valais
         'ZG', // Zug
         'ZH', // Zurich
-    ];
+    );
 
     public $compareIdentical = true;
 }

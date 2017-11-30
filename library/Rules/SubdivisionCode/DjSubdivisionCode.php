@@ -22,14 +22,14 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class DjSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'AR', // Arta
         'AS', // 'Ali Sabih
         'DI', // Dikhil
         'DJ', // Djibouti
         'OB', // Obock
         'TA', // Tadjoura
-    ];
+    );
 
     public $compareIdentical = true;
 }

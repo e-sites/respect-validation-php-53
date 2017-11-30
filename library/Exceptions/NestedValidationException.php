@@ -20,7 +20,7 @@ class NestedValidationException extends ValidationException implements IteratorA
     /**
      * @var SplObjectStorage
      */
-    private $exceptions = [];
+    private $exceptions = array();
 
     /**
      * @param ValidationException $exception
@@ -64,7 +64,7 @@ class NestedValidationException extends ValidationException implements IteratorA
      */
     public function findMessages(array $paths)
     {
-        $messages = [];
+        $messages = array();
 
         foreach ($paths as $key => $value) {
             $numericKey = is_numeric($key);
@@ -134,7 +134,7 @@ class NestedValidationException extends ValidationException implements IteratorA
 
         $lastDepth = 0;
         $lastDepthOriginal = 0;
-        $knownDepths = [];
+        $knownDepths = array();
         foreach ($recursiveIteratorIterator as $childException) {
             if ($childException instanceof self
                 && $childException->getRelated()->count() > 0
@@ -161,12 +161,12 @@ class NestedValidationException extends ValidationException implements IteratorA
 
             $childrenExceptions->attach(
                 $childException,
-                [
+                array(
                     'depth' => $currentDepth,
                     'depth_original' => $currentDepthOriginal,
                     'previous_depth' => $lastDepth,
                     'previous_depth_original' => $lastDepthOriginal,
-                ]
+                )
             );
         }
 
@@ -178,7 +178,7 @@ class NestedValidationException extends ValidationException implements IteratorA
      */
     public function getMessages()
     {
-        $messages = [$this->getMessage()];
+        $messages = array($this->getMessage());
         foreach ($this as $exception) {
             $messages[] = $exception->getMessage();
         }
@@ -196,7 +196,7 @@ class NestedValidationException extends ValidationException implements IteratorA
     public function getFullMessage()
     {
         $marker = '-';
-        $messages = [];
+        $messages = array();
         $exceptions = $this->getIterator();
 
         if ($this->hasCustomTemplate() || count($exceptions) != 1) {

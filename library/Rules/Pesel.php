@@ -19,7 +19,7 @@ class Pesel extends AbstractRule
             return false;
         }
 
-        $weights = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3];
+        $weights = array(1, 3, 7, 9, 1, 3, 7, 9, 1, 3);
 
         $targetControlNumber = $input[10];
         $calculateControlNumber = 0;

@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class UgSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'C', // Central
         'E', // Eastern
         'N', // Northern
@@ -107,7 +107,7 @@ class UgSubdivisionCode extends AbstractSearcher
         '417', // Isingiro
         '418', // Kiruhura
         '419', // Buliisa
-    ];
+    );
 
     public $compareIdentical = true;
 }

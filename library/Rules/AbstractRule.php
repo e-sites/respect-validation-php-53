@@ -42,7 +42,7 @@ abstract class AbstractRule implements Validatable
         return $this->name;
     }
 
-    public function reportError($input, array $extraParams = [])
+    public function reportError($input, array $extraParams = array())
     {
         $exception = $this->createException();
         $name = $this->name ?: ValidationException::stringify($input);

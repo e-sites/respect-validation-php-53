@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class NuSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [null, ''];
+    public $haystack = array(null, '');
 
     public $compareIdentical = true;
 }

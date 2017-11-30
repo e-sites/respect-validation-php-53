@@ -20,12 +20,12 @@ use Respect\Validation\Exceptions\SubdivisionCodeException;
  */
 class HtSubdivisionCodeException extends SubdivisionCodeException
 {
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => '{{name}} must be a subdivision code of Haiti',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => '{{name}} must not be a subdivision code of Haiti',
-        ],
-    ];
+        ),
+    );
 }

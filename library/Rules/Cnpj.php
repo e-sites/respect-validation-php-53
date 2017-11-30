@@ -21,7 +21,7 @@ class Cnpj extends AbstractRule
 
         // Code ported from jsfromhell.com
         $cleanInput = preg_replace('/\D/', '', $input);
-        $b = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
+        $b = array(6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2);
 
         if ($cleanInput < 1) {
             return false;

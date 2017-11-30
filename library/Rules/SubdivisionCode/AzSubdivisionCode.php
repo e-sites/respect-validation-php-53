@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class AzSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'AB', // Şirvan
         'ABS', // Abseron
         'AGA', // Agstafa
@@ -102,7 +102,7 @@ class AzSubdivisionCode extends AbstractSearcher
         'SAD', // Sadarak
         'SAH', // Sahbuz
         'SAR', // Sarur
-    ];
+    );
 
     public $compareIdentical = true;
 }

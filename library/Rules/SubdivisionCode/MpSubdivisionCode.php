@@ -22,12 +22,12 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class MpSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'N', // Northern Islands
         'R', // Rota
         'S', // Saipan
         'T', // Tinian
-    ];
+    );
 
     public $compareIdentical = true;
 }

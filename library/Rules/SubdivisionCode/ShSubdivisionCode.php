@@ -22,11 +22,11 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class ShSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'AC', // Ascension
         'HL', // Saint Helena
         'TA', // Tristan da Cunha
-    ];
+    );
 
     public $compareIdentical = true;
 }

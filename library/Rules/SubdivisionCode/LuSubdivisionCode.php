@@ -22,11 +22,11 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class LuSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'D', // Diekirch
         'G', // Grevenmacher
         'L', // Luxembourg
-    ];
+    );
 
     public $compareIdentical = true;
 }

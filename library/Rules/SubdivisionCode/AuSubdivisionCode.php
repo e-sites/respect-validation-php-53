@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class AuSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'ACT', // Australian Capital Territory
         'NSW', // New South Wales
         'NT', // Northern Territory
@@ -31,7 +31,7 @@ class AuSubdivisionCode extends AbstractSearcher
         'TAS', // Tasmania
         'VIC', // Victoria
         'WA', // Western Australia
-    ];
+    );
 
     public $compareIdentical = true;
 }

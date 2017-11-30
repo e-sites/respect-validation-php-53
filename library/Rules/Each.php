@@ -27,7 +27,7 @@ class Each extends IterableType
 
     public function assert($input)
     {
-        $exceptions = [];
+        $exceptions = array();
 
         if (!parent::validate($input)) {
             throw $this->reportError($input);

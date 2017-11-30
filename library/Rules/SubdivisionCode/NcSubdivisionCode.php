@@ -22,11 +22,11 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class NcSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'L', // Iles Loyaute
         'N', // Nord
         'S', // Sud
-    ];
+    );
 
     public $compareIdentical = true;
 }

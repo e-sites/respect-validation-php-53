@@ -22,10 +22,10 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class StSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'P', // Principe
         'S', // Sao Tome
-    ];
+    );
 
     public $compareIdentical = true;
 }

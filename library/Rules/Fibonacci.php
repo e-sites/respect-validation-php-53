@@ -25,7 +25,7 @@ class Fibonacci extends AbstractRule
             return false;
         }
 
-        $sequence = [0, 1];
+        $sequence = array(0, 1);
         $position = 1;
         while ($input > $sequence[$position]) {
             ++$position;

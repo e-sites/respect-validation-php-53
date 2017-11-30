@@ -20,12 +20,12 @@ use Respect\Validation\Exceptions\SubdivisionCodeException;
  */
 class MgSubdivisionCodeException extends SubdivisionCodeException
 {
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => '{{name}} must be a subdivision code of Madagascar',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => '{{name}} must not be a subdivision code of Madagascar',
-        ],
-    ];
+        ),
+    );
 }

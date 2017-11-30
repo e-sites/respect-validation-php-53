@@ -22,11 +22,11 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class TkSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'A', // Atafu
         'F', // Fakaofo
         'N', // Nukunonu
-    ];
+    );
 
     public $compareIdentical = true;
 }

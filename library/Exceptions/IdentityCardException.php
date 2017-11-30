@@ -16,12 +16,12 @@ class IdentityCardException extends ValidationException
     /**
      * @var array
      */
-    public static $defaultTemplates = [
-        self::MODE_DEFAULT => [
+    public static $defaultTemplates = array(
+        self::MODE_DEFAULT => array(
             self::STANDARD => '{{name}} must be a valid Identity Card number for {{countryCode}}',
-        ],
-        self::MODE_NEGATIVE => [
+        ),
+        self::MODE_NEGATIVE => array(
             self::STANDARD => '{{name}} must not be a valid Identity Card number for {{countryCode}}',
-        ],
-    ];
+        ),
+    );
 }

@@ -22,11 +22,11 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class WfSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'A', // Alo
         'S', // Sigave
         'W', // ʻUvea
-    ];
+    );
 
     public $compareIdentical = true;
 }

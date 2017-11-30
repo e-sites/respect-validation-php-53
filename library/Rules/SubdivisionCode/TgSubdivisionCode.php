@@ -22,13 +22,13 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class TgSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'C', // Centrale
         'K', // Kara
         'M', // Maritime
         'P', // Plateaux
         'S', // Savanes
-    ];
+    );
 
     public $compareIdentical = true;
 }

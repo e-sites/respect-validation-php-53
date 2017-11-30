@@ -22,7 +22,7 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class KzSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'AKM', // Aqmola
         'AKT', // Aqtobe
         'ALA', // Almaty
@@ -40,7 +40,7 @@ class KzSubdivisionCode extends AbstractSearcher
         'YUZ', // Ongtustik Qazaqstan
         'ZAP', // Baty Qazaqstan
         'ZHA', // Zhambyl
-    ];
+    );
 
     public $compareIdentical = true;
 }

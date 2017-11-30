@@ -40,10 +40,10 @@ class Date extends AbstractRule
             return false !== strtotime($inputString);
         }
 
-        $exceptionalFormats = [
+        $exceptionalFormats = array(
             'c' => 'Y-m-d\TH:i:sP',
             'r' => 'D, d M Y H:i:s O',
-        ];
+        );
 
         if (in_array($this->format, array_keys($exceptionalFormats))) {
             $this->format = $exceptionalFormats[$this->format];

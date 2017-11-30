@@ -22,13 +22,13 @@ use Respect\Validation\Rules\AbstractSearcher;
  */
 class CcSubdivisionCode extends AbstractSearcher
 {
-    public $haystack = [
+    public $haystack = array(
         'D', // Direction Island
         'H', // Home Island
         'O', // Horsburgh Island
         'S', // South Island
         'W', // West Island
-    ];
+    );
 
     public $compareIdentical = true;
 }

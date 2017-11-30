@@ -21,7 +21,7 @@ class CurrencyCode extends AbstractRule
      *
      * @var array
      */
-    private $currencyCodes = [
+    private $currencyCodes = array(
         'AED', // UAE Dirham
         'AFN', // Afghani
         'ALL', // Lek
@@ -200,7 +200,7 @@ class CurrencyCode extends AbstractRule
         'ZAR', // Rand
         'ZMW', // Zambian Kwacha
         'ZWL', // Zimbabwe Dollar
-    ];
+    );
 
     public function validate($input)
     {
