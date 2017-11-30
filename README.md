@@ -1,4 +1,8 @@
-# Respect\Validation
+# Respect\Validation For PHP 5.3
+
+I used [this script](https://github.com/thomasbachem/php-short-array-syntax-converter) 
+by [@thomasbachem](https://github.com/thomasbachem) to convert the short array syntax (`[]`)
+to PHP <= 5.3's longer `array()` syntax.
 
 [![Build Status](https://img.shields.io/travis/Respect/Validation/master.svg?style=flat-square)](http://travis-ci.org/Respect/Validation)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/Respect/Validation/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/Respect/Validation/?branch=master)
